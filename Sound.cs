@@ -6,6 +6,9 @@ using UnityEngine;
 [System.Serializable]
 public class Sound
 {
+    // This script was created by Brackeys in this tutorial: 
+    // https://www.youtube.com/watch?v=6OT43pvUyfY&lc=Ugiwk2y9Cy57dngCoAEC
+    
     public string name;
 
     public AudioClip clip;
