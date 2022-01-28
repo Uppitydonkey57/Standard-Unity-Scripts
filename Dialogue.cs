@@ -7,6 +7,4 @@ using UnityEngine.Events;
 public class Dialogue : ScriptableObject
 {
     public Line[] dialogue;
-
-    public BattleSetup[] battles;
 }

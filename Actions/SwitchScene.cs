@@ -11,23 +11,17 @@ public class SwitchScene : Action
 
     public bool useBuildOrder;
 
-    GameMaster gm;
-
-    private void Start()
-    {
-        gm = FindObjectOfType<GameMaster>();
-    }
-
     public override void PerformAction()
     {
         Time.timeScale = 1f;
 
         if (!useBuildOrder)
         {
-            StartCoroutine(gm.LoadLevel(sceneName));
+            //Replace if using custom scene loader
+            SceneManager.LoadScene(sceneName);
         } else
         {
-            StartCoroutine(gm.LoadLevel());
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
     }
 }

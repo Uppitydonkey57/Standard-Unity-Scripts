@@ -90,7 +90,6 @@ public class DialogueRunner : MonoBehaviour
 
         if (commandCheck.Length > 0 && commandCheck[0] == "")
         {
-            key.ProcessCommand(line.dialogue, FindObjectOfType<GameMaster>()); //REMOVE GM LATER
             hasStarted = false;
             yield break;
         }
